@@ -1,0 +1,50 @@
+# Local environment variables containing secrets
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Allow example env files (they should NOT contain real secrets)
+!.env.example
+!.env.template
+
+# Private Keys and Certificates
+*.pem
+*.key
+*.p12
+*.pfx
+id_rsa
+id_ed25519
+gcloud-*.json
+credentials.json
+secrets.json
+
+# Local Configuration files (may contain local DB connection strings)
+config.local.json
+settings.local.xml
+database.yml
+
+# IDEs and Editor settings
+.vscode/
+.idea/
+*.suo
+*.swp
+*.swo
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Logs and databases
+*.log
+*.sqlite
+*.sqlite3
+
+# Common dependency folders (Node, Python)
+node_modules/
+venv/
+.venv/
+env/
+__pycache__/
+*.pyc
